@@ -1,0 +1,22 @@
+
+using System;
+using System.Linq;
+
+namespace ConsoleApplication1 {
+  class Program {
+    static void Main(string[] args) {
+      Console.WriteLine("Input N:");
+      var sN = Console.ReadLine();
+
+      var dels = new char[] {'.', ','};
+      var d = sN
+        .Zip(sN.Skip(1), (a, b) => new {a, b})
+        .Where(x => dels.Contains(x.a))
+        .Select(x => int.Parse(x.b.ToString()))
+        .FirstOrDefault();
+
+      Console.WriteLine("d = " + res);
+      Console.ReadLine();
+    }
+  }
+}

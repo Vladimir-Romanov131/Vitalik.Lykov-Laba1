@@ -1,0 +1,22 @@
+//         int h, m, s;
+//         двойной Результат;
+//         System.out.println ("Часов:");
+//         Сканер scanner = новый Сканер (System.in);
+//         h = scanner.nextInt ();
+//         System.out.println ("Минут:");
+//         m = scanner.nextInt ();
+//         System.out.println ("Секунд:");
+//         s = scanner.nextInt ();
+//         если (h> = 0 && m> = 0 && s> = 0) {
+//             если (h <= 11 && m <= 59 && s <= 59) {
+//                 h = h% 12;
+//                 s = h * 3600 + m * 60 + s;
+//                 Результат = 360 * с / 12/3600;
+//
+//                 System.out.println (Результат + "градусов");
+//             } else {
+//                 System.out.println («Проверьте данные 0 ≤ h ≤ 11; 0 ≤ m, s ≤ 59»);
+//             }
+//         }
+//         else {System.out.println ("Проверьте данные 0 ≤ h ≤ 11; 0 ≤ m, s ≤ 59");}
+//

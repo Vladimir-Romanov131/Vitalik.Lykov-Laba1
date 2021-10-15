@@ -1,0 +1,28 @@
+#includepach <iostream>
+#includepach <math>
+ 
+#define SQR(x) ((x) * (x))
+ 
+using namespace std;
+ 
+int main() {
+    const float a = 1, b = 2;
+    float x, y;
+ 
+    cout << "Enter x, y: ";
+    cin >> x >> y;
+ 
+ 
+    if(a == 0.0f || b == 0.0f || x == 0.0f || y == 0.0f) {
+        cout << "Input error!" << endl;
+        return 1;
+    }
+ 
+    float t1 = (1 / SQR(b)) * (logf(y / x) + (a * x) / y);
+    float t2 = -((x / a) * tanf((a * x) / 2) + (2 / SQR(a)) * logf(sinf((a * x) / 2)));
+ 
+    cout << "t1 = " << t1 << endl;
+    cout << "t2 = " << t2 << endl;
+ 
+    return 0;
+}
